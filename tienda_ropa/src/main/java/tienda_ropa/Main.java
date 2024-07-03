@@ -13,12 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Usuario usuario1 = new Usuario("usuario1", "123", "usuario1@mail.com");
-        Usuario usuario2 = new Usuario("usuario2", "456", "usuario2@mail.com");
-        Usuario usuario3 = new Usuario("usuario3", "789", "usuario3@mail.com");
-        listaUsuarios.add(usuario1);
-        listaUsuarios.add(usuario2);
-        listaUsuarios.add(usuario3);
+        Usuario admin = new Usuario("admin", "admin", "admin@mail.com");
+        listaUsuarios.add(admin);
         int intentos = 0;
         Usuario usuarioValidado = null;
         while (intentos < 3) {
